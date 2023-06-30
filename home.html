@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sriracha&display=swap" rel="stylesheet">
+    <title>Lab 6: File Upload</title>
+  </head>
+  <body>
+    <div class="container">
+    <header>
+      <div class="header">
+    <img class="image" src="images/cheers-logo.png" alt="Cheers Logo">
+    <nav>
+      <div class="nav home">
+        <a href="home.html">Home</a>
+        <a href="list_employees.php">Employees</a>
+        <a href="list_departments.php">Departments</a>
+        <a href="employee_registration.php">Employee Registration</a>
+        <a href="department_registration.php">Department Registration</a>
+        <a href="images.php">Images</a></div>
+        </nav></div>
+    </header>
+
+    <main>
+        <?php
+        header('Expires: Sun, 01 Jan 2014 00:00:00 GMT');
+        header('Cache-Control: no-store, no-cache, must-revalidate');
+        header('Cache-Control: post-check=0, pre-check=0', FALSE);
+        header('Pragma: no-cache');
+        require('connection.php');
+        require('list_users.php');
+        ?>
+        <img class="img1" src="images/cheers.jpg">
+    </main>
+    <footer class="footer">
+      <p>&copy Megan Louise Downey - 2023</p>
+    </footer>
+    </div>
+    </body>
+    </html>
